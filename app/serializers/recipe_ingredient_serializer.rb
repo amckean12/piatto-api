@@ -1,11 +1,10 @@
 class RecipeIngredientSerializer < ActiveModel::Serializer
-  attributes :ingredients
+  attributes :description
 
-  def ingredients
-    self.object.ingredients.map do |ingredient|
-      {id: ingredient.id,
-       description: ingredient.description
-      }
-    end
-  end
+  #def ingredients
+  #  self.object.ingredients.map do |ingredient|
+  #    {id: ingredient.id,
+  #     description: ingredient.description
+  #    }
+  #  end
 end
