@@ -117,3 +117,20 @@ RecipeIngredient.create(recipe_id: 7, ingredient_id: 25)
 RecipeIngredient.create(recipe_id: 7, ingredient_id: 22)
 RecipeIngredient.create(recipe_id: 7, ingredient_id: 21)
 RecipeIngredient.create(recipe_id: 7, ingredient_id: 20)
+
+
+#Tags
+
+Tag.create(tag: "italian")
+Tag.create(tag: "pasta")
+
+#Recipe Tag
+RecipeTag.create(recipe_id: 1, tag_id: 1)
+RecipeTag.create(recipe_id: 1, tag_id: 2)
+RecipeTag.create(recipe_id: 2, tag_id: 1)
+RecipeTag.create(recipe_id: 3, tag_id: 2)
+RecipeTag.create(recipe_id: 4, tag_id: 1)
+RecipeTag.create(recipe_id: 5, tag_id: 2)
+RecipeTag.create(recipe_id: 5, tag_id: 1)
+RecipeTag.create(recipe_id: 6, tag_id: 2)
+RecipeTag.create(recipe_id: 7, tag_id: 1)
