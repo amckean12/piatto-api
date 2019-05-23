@@ -1,3 +1,3 @@
 class RecipeTagSerializer < ActiveModel::Serializer
-  attributes :tag
+  attributes :tag_name
 end

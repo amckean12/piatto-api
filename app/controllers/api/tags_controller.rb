@@ -5,8 +5,7 @@ class Api::TagsController < ApplicationController
   end
 
   def show
-    @tag = Tag.find_by_slug(params[:id])
-    binding.pry
+    @tag = Tag.find_by(slug: params[:slug])
     render json: @tag, status: 200
   end
 
