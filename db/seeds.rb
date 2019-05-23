@@ -121,8 +121,8 @@ RecipeIngredient.create(recipe_id: 7, ingredient_id: 20)
 
 #Tags
 
-Tag.create(tag: "italian")
-Tag.create(tag: "pasta")
+Tag.create(tag_name: "italian")
+Tag.create(tag_name: "pasta")
 
 #Recipe Tag
 RecipeTag.create(recipe_id: 1, tag_id: 1)
