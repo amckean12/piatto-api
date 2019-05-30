@@ -1,13 +1,16 @@
 class Api::UsersController < ApplicationController
   before_action :set_user, only: [:show, :update]
 
+  def new
+  end
+
   def index
     @users = User.all
     render json: @users
   end
 
   def create
-    @user = User.create(user_params)
+    @user = User.new(user_params)
     if @user.valid? && @user.save
       render json: @user
     else
