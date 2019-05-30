@@ -1,4 +1,6 @@
 class Api::TagsController < ApplicationController
+  before_action :authenticate_user
+
   def index
     @tags = Tag.all
     render json: @tags, status: 200

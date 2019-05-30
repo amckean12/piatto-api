@@ -1,4 +1,6 @@
 class Api::RecipesController < ApplicationController
+  before_action :authenticate_user
+  
   def index
     @recipes = Recipe.all
     render json: @recipes, status: 200

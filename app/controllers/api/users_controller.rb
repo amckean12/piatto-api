@@ -1,5 +1,7 @@
 class Api::UsersController < ApplicationController
   before_action :set_user, only: [:show, :update]
+  before_action :authenticate_user, only: [:show, :update]
+  
 
   def new
   end
