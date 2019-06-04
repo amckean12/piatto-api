@@ -10,5 +10,4 @@ class Api::TagsController < ApplicationController
     @tag = Tag.find_by(slug: params[:slug])
     render json: @tag, status: 200
   end
-
 end
