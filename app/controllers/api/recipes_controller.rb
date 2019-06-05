@@ -1,5 +1,5 @@
 class Api::RecipesController < ApplicationController
-  before_action :authenticate_user
+  #before_action :authenticate_user
 
   def index
     @recipes = Recipe.all
@@ -7,8 +7,8 @@ class Api::RecipesController < ApplicationController
   end
 
   def create
-    @recipe = Recipe.new(recipe_params)
-
+    @recipe = Recipe.create(recipe_params)
+    redner json: @recipe, status: 200
   end
 
   def show
@@ -19,6 +19,6 @@ class Api::RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :description)
+    params.require(:recipe).permit(:name, :description, ingredients_attributes: [:id, :description], tags_attributes: [:id, :tag_name])
   end
 end
