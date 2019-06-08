@@ -37,6 +37,6 @@ class Api::RecipesController < ApplicationController
       :name,
       :description,
       ingredients_attributes: [:id, :description],
-      tags_attributes: [:id, :tag_name])
+      tags_attributes: [:id, :tag_name, :slug])
   end
 end
