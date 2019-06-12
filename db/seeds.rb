@@ -134,3 +134,6 @@ RecipeTag.create(recipe_id: 5, tag_id: 2)
 RecipeTag.create(recipe_id: 5, tag_id: 1)
 RecipeTag.create(recipe_id: 6, tag_id: 2)
 RecipeTag.create(recipe_id: 7, tag_id: 1)
+
+
+User.create(first_name: "Mr", last_name: "User", email: "user@me.com", password:"password")

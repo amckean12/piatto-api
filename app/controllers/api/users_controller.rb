@@ -1,11 +1,6 @@
 class Api::UsersController < ApplicationController
   before_action :set_user, only: [:show, :update]
-  #This might mess some things up when we look at this again please check when work again.
   before_action :authenticate_user, only: [:show, :update]
-
-
-  def new
-  end
 
   def index
     @users = User.all
