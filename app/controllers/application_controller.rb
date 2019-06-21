@@ -5,5 +5,5 @@ class ApplicationController < ActionController::API
 
   def logged_in?
     !!curent_user
-  end 
+  end
 end
